@@ -1,8 +1,5 @@
 <template>
-  <div>
-  <h1>testies</h1>
-  <p>test this</p>
-  </div>
+  <img src="../assets/data/nominal-attribute-type.png" style="height: 50px"/>
 </template>
 
 <script>
