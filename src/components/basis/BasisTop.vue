@@ -1,13 +1,13 @@
 <template>
   <div class="basic-top-div">
-    <SearchBar/>
+    <SearchBar />
   </div>
 </template>
 
 <script>
 import SearchBar from "./SearchBar";
 export default {
-  components: { SearchBar }
+  components: { SearchBar },
 };
 </script>
 

@@ -183,8 +183,6 @@ export default {
 <style lang="scss" scoped>
 @use "../../mainStyles" as ms;
 
-
-
 .search-bar-div {
   width: 400px;
   display: flex;

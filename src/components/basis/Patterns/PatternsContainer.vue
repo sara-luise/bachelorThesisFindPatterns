@@ -1,15 +1,45 @@
 <template>
   <div class="patters-container">
-    <PatternPreview :pattern-name="'(Stacked) radial bar chart'" :image-name="'(Stacked)-radial-bar-chart'" />
-    <PatternPreview :pattern-name="'(zoomable) facet filter'" :image-name="'(zoomable)-facet-filter'"/>
-    <PatternPreview :pattern-name="'(zoomable) facet filter'" :image-name="'(zoomable)-facet-filter'"/>
-    <PatternPreview :pattern-name="'(zoomable) facet filter'" :image-name="'(zoomable)-facet-filter'"/>
-    <PatternPreview :pattern-name="'(zoomable) facet filter'" :image-name="'(zoomable)-facet-filter'"/>
-    <PatternPreview :pattern-name="'(zoomable) facet filter'" :image-name="'(zoomable)-facet-filter'"/>
-    <PatternPreview :pattern-name="'focus area with (detail)-glyphs'" :image-name="'focus-area-with-(detail)-glyphs'"/>
-    <PatternPreview :pattern-name="'(zoomable) facet filter'" :image-name="'(zoomable)-facet-filter'"/>
-    <PatternPreview :pattern-name="'(zoomable) facet filter'" :image-name="'(zoomable)-facet-filter'"/>
-    <PatternPreview :pattern-name="'(zoomable) facet filter'" :image-name="'(zoomable)-facet-filter'"/>
+    <PatternPreview
+      :pattern-name="'(Stacked) radial bar chart'"
+      :image-name="'(Stacked)-radial-bar-chart'"
+    />
+    <PatternPreview
+      :pattern-name="'(zoomable) facet filter'"
+      :image-name="'(zoomable)-facet-filter'"
+    />
+    <PatternPreview
+      :pattern-name="'(zoomable) facet filter'"
+      :image-name="'(zoomable)-facet-filter'"
+    />
+    <PatternPreview
+      :pattern-name="'(zoomable) facet filter'"
+      :image-name="'(zoomable)-facet-filter'"
+    />
+    <PatternPreview
+      :pattern-name="'(zoomable) facet filter'"
+      :image-name="'(zoomable)-facet-filter'"
+    />
+    <PatternPreview
+      :pattern-name="'(zoomable) facet filter'"
+      :image-name="'(zoomable)-facet-filter'"
+    />
+    <PatternPreview
+      :pattern-name="'focus area with (detail)-glyphs'"
+      :image-name="'focus-area-with-(detail)-glyphs'"
+    />
+    <PatternPreview
+      :pattern-name="'(zoomable) facet filter'"
+      :image-name="'(zoomable)-facet-filter'"
+    />
+    <PatternPreview
+      :pattern-name="'(zoomable) facet filter'"
+      :image-name="'(zoomable)-facet-filter'"
+    />
+    <PatternPreview
+      :pattern-name="'(zoomable) facet filter'"
+      :image-name="'(zoomable)-facet-filter'"
+    />
   </div>
 </template>
 
@@ -39,6 +69,5 @@ export default {
   flex-wrap: wrap;
   padding: 1%;
   align-content: flex-start;
-
 }
 </style>

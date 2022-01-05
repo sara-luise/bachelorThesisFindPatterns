@@ -1,8 +1,11 @@
 <template>
   <div class="facet-bar">
-    <md-button  class="deselect-btn">
+    <md-button class="deselect-btn">
       <div class="format-deselect-btn">
-        <img :src="require('@/assets/deselect_frame.png')" />
+        <img
+          :src="require('@/assets/deselect_frame.png')"
+          alt="deselect icon"
+        />
         <p>Deselect</p>
       </div>
     </md-button>
@@ -329,8 +332,8 @@ export default {
 };
 </script>
 
-<style lang="scss" >
-@use '../../../mainStyles' as ms;
+<style lang="scss">
+@use "../../../mainStyles" as ms;
 
 .faceted-nav-div {
   display: flex;
@@ -342,12 +345,12 @@ export default {
   overflow-y: scroll;
 }
 
-.facet-bar{
+.facet-bar {
   position: relative;
   box-shadow: 5px 0 5px -2px #ededed;
 }
 
-.format-deselect-btn{
+.format-deselect-btn {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -357,34 +360,33 @@ export default {
   background: white;
   img {
     background: linear-gradient(
-        to right,
-        ms.$element-base-color,
-        ms.$grid-base-color,
-        ms.$layout-structure-base-color,
-        ms.$search-task-base-color,
-        ms.$data-structure-base-color,
-        ms.$attribute-type-base-color
+      to right,
+      ms.$element-base-color,
+      ms.$grid-base-color,
+      ms.$layout-structure-base-color,
+      ms.$search-task-base-color,
+      ms.$data-structure-base-color,
+      ms.$attribute-type-base-color
     );
     height: 30px;
     margin-right: 5px;
   }
 }
 
-.md-button .md-ripple{
+.md-button .md-ripple {
   padding: 0;
 }
 
-.format-deselect-btn:hover{
+.format-deselect-btn:hover {
   background: ms.$background-search-task-base-color;
 }
 
-.deselect-btn{
+.deselect-btn {
   position: absolute;
-  bottom:20px;
+  bottom: 20px;
   right: 10px;
-  box-shadow: #bbbbbb 0px 5px 15px;
+  box-shadow: #bbbbbb 0 5px 15px;
   background: white;
-
 }
 
 .full-control {
