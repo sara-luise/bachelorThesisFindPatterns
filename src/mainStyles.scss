@@ -1,9 +1,18 @@
 $element-base-color: #2e1f71;
 $grid-base-color: #9489d0;
 $layout-structure-base-color: #d7d1f9;
-$data-structure-base-color: #f4f26f;
-$attribute-type-base-color: #f4d26f;
 $search-task-base-color: #d3d3d3;
+$attribute-type-base-color: #f4f26f;
+$data-structure-base-color: #f4d26f;
+
+
+//for background
+$background-element-base-color: rgba(46, 31, 113, 0.15);
+$background-grid-base-color: rgba(148, 137, 208, 0.15);
+$background-layout-structure-base-color: rgba(215, 209, 249, 0.15);
+$background-search-task-base-color: rgba(211, 211, 211, 0.15);
+$background-data-structure-base-color: rgba(244, 210, 111, 0.15);
+$background-attribute-type-base-color: rgba(244, 242, 111, 0.15);
 
 
 
@@ -11,4 +20,12 @@ $search-task-base-color: #d3d3d3;
 
 * {
   font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  overflow: hidden;
+  scrollbar-color: $background-element-base-color #fafafa;
+  scrollbar-width: thin;
 }
+
+
+
+

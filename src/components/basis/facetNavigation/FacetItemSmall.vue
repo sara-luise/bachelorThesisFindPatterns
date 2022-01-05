@@ -1,0 +1,35 @@
+<template>
+  <md-button
+    v-bind:class="{ chosen: item.chosen }"
+    v-on:click="item.chosen = !item.chosen"
+  >
+    <div>
+      <p>{{ item.description }}</p>
+    </div>
+  </md-button>
+</template>
+
+<script>
+export default {
+  name: "FacetItemSmall",
+  props: ["item"],
+};
+</script>
+
+<style lang="scss" scoped>
+div {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: flex-start;
+}
+
+.chosen {
+  font-weight: 700;
+
+  p {
+    font-size: 19px;
+    margin: 0;
+  }
+}
+</style>
