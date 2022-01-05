@@ -1,11 +1,7 @@
 <template>
   <div id="app">
     <div class="base-layout">
-      <BasisTop />
-      <div class="basis-body">
-        <FacetedNavigation />
-        <PatternsContainer />
-      </div>
+      <router-view />
     </div>
   </div>
 </template>
@@ -19,21 +15,7 @@
   flex-direction: column;
   overflow: hidden;
 }
-
-.basis-body {
-  display: grid;
-  grid-template-columns: 22rem auto;
-  flex: 1;
-  height: 100%;
-  margin: 0 0 0 1%;
-}
 </style>
 
 <script>
-import BasisTop from "./components/basis/BasisTop";
-import PatternsContainer from "./components/basis/PatternsContainer";
-import FacetedNavigation from "./components/basis/facetNavigation/FacetedNavigation";
-export default {
-  components: { FacetedNavigation, PatternsContainer, BasisTop },
-};
 </script>

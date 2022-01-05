@@ -1,9 +1,17 @@
 <template>
-  <div class="faceted-nav-div full-control">
-    <div class="list">
-      <FacetCategory :category-items-list="buildingBlocksList" />
-      <FacetCategorySmall :category-items-list="searchTaskList" />
-      <FacetCategory :category-items-list="dataList" />
+  <div class="facet-bar">
+    <md-button  class="deselect-btn">
+      <div class="format-deselect-btn">
+        <img :src="require('@/assets/deselect_frame.png')" />
+        <p>Deselect</p>
+      </div>
+    </md-button>
+    <div class="faceted-nav-div full-control">
+      <div class="list">
+        <FacetCategory :category-items-list="buildingBlocksList" />
+        <FacetCategorySmall :category-items-list="searchTaskList" />
+        <FacetCategory :category-items-list="dataList" />
+      </div>
     </div>
   </div>
 </template>
@@ -321,15 +329,62 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
+@use '../../../mainStyles' as ms;
+
 .faceted-nav-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 5px 0 5px -2px #ededed;
+
   margin: 0;
-  height: 94vh;
+  height: 92vh;
   overflow-y: scroll;
+}
+
+.facet-bar{
+  position: relative;
+  box-shadow: 5px 0 5px -2px #ededed;
+}
+
+.format-deselect-btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  z-index: 4;
+  background: white;
+  img {
+    background: linear-gradient(
+        to right,
+        ms.$element-base-color,
+        ms.$grid-base-color,
+        ms.$layout-structure-base-color,
+        ms.$search-task-base-color,
+        ms.$data-structure-base-color,
+        ms.$attribute-type-base-color
+    );
+    height: 30px;
+    margin-right: 5px;
+  }
+}
+
+.md-button .md-ripple{
+  padding: 0;
+}
+
+.format-deselect-btn:hover{
+  background: ms.$background-search-task-base-color;
+}
+
+.deselect-btn{
+  position: absolute;
+  bottom:20px;
+  right: 10px;
+  box-shadow: #bbbbbb 0px 5px 15px;
+  background: white;
+
 }
 
 .full-control {

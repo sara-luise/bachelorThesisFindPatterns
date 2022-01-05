@@ -183,14 +183,7 @@ export default {
 <style lang="scss" scoped>
 @use "../../mainStyles" as ms;
 
-.scrollbar-hidden::-webkit-scrollbar {
-  display: none;
-}
 
-.scrollbar-hidden {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
 
 .search-bar-div {
   width: 400px;
@@ -198,7 +191,6 @@ export default {
   margin-top: 10px;
   margin-right: 2rem;
 }
-
 
 .md-field.md-theme-default::before {
   background: linear-gradient(
