@@ -18,6 +18,5 @@ export default {
 .layout {
   display: grid;
   grid-template-columns: auto 1fr;
-  margin: 3%;
 }
 </style>

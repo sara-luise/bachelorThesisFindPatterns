@@ -25,7 +25,7 @@ export default {
 .pattern-card {
   height: 22rem;
   width: 22rem;
-  margin: 10px;
+  margin: 20px;
   align-items: center;
   position: relative;
   z-index: 1;

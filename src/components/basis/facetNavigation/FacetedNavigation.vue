@@ -253,7 +253,7 @@ export default {
                 chosen: false,
               },
               {
-                imageName: "data/quantitative-attribute-type",
+                imageName: "data/quanti-attribute-type",
                 description: "Quantitative",
                 chosen: false,
               },

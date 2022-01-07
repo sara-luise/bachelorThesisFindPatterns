@@ -20,7 +20,7 @@ export default {
 div {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 

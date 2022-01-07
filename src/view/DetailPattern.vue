@@ -23,10 +23,12 @@ export default {
 
 .pattern-detail-body {
   margin: 1% 0 1% 1%;
-  height: 10000px;
-  overflow: scroll;
+  height: 700rem;
+  overflow-y: scroll;
   position: relative;
+  align-content: center;
 }
+
 
 .format-back-btn {
   display: flex;

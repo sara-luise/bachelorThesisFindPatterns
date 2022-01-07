@@ -1,45 +1,18 @@
 <template>
   <div class="patters-container">
     <PatternPreview
-      :pattern-name="'(Stacked) radial bar chart'"
+      :pattern-name="'(Stacked) Radial Bar Chart'"
       :image-name="'(Stacked)-radial-bar-chart'"
     />
     <PatternPreview
-      :pattern-name="'(zoomable) facet filter'"
+      :pattern-name="'(Zoomable) Facet Filter'"
       :image-name="'(zoomable)-facet-filter'"
     />
     <PatternPreview
-      :pattern-name="'(zoomable) facet filter'"
-      :image-name="'(zoomable)-facet-filter'"
+      :pattern-name="'Tile View With Subsets'"
+      :image-name="'tile-view-with-subsets'"
     />
-    <PatternPreview
-      :pattern-name="'(zoomable) facet filter'"
-      :image-name="'(zoomable)-facet-filter'"
-    />
-    <PatternPreview
-      :pattern-name="'(zoomable) facet filter'"
-      :image-name="'(zoomable)-facet-filter'"
-    />
-    <PatternPreview
-      :pattern-name="'(zoomable) facet filter'"
-      :image-name="'(zoomable)-facet-filter'"
-    />
-    <PatternPreview
-      :pattern-name="'focus area with (detail)-glyphs'"
-      :image-name="'focus-area-with-(detail)-glyphs'"
-    />
-    <PatternPreview
-      :pattern-name="'(zoomable) facet filter'"
-      :image-name="'(zoomable)-facet-filter'"
-    />
-    <PatternPreview
-      :pattern-name="'(zoomable) facet filter'"
-      :image-name="'(zoomable)-facet-filter'"
-    />
-    <PatternPreview
-      :pattern-name="'(zoomable) facet filter'"
-      :image-name="'(zoomable)-facet-filter'"
-    />
+
   </div>
 </template>
 

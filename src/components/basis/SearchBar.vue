@@ -180,7 +180,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "../../mainStyles" as ms;
 
 .search-bar-div {
@@ -188,6 +188,10 @@ export default {
   display: flex;
   margin-top: 10px;
   margin-right: 2rem;
+}
+
+.md-list {
+  background: white !important;
 }
 
 .md-field.md-theme-default::before {

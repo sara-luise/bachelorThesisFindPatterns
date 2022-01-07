@@ -13,7 +13,6 @@
   min-height: 100vw;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 </style>
 

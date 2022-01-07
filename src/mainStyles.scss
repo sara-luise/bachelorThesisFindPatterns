@@ -24,6 +24,11 @@ $background-attribute-type-base-color: rgba(244, 242, 111, 0.15);
   overflow: hidden;
   scrollbar-color: $background-element-base-color #fafafa;
   scrollbar-width: thin;
+  text-decoration: none !important;
+}
+
+body{
+  background: #fefefe;
 }
 
 

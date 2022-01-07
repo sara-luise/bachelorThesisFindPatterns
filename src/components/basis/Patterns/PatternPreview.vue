@@ -35,6 +35,8 @@ export default {
   transform: scale(1.05);
 }
 
+
+
 a {
   div {
     color: black;
@@ -43,7 +45,7 @@ a {
 
 img {
   height: 250px;
-  transform: scale(-0.9);
+  transform: scale(0.9);
 }
 
 .middle {
