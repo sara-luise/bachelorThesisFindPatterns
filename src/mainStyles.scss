@@ -14,7 +14,7 @@ $background-search-task-base-color: rgba(211, 211, 211, 0.15);
 $background-data-structure-base-color: rgba(244, 210, 111, 0.15);
 $background-attribute-type-base-color: rgba(244, 242, 111, 0.15);
 
-
+$select-color: rgba(148, 137, 208, 0.56);
 
 
 
@@ -25,6 +25,15 @@ $background-attribute-type-base-color: rgba(244, 242, 111, 0.15);
   scrollbar-color: $background-element-base-color #fafafa;
   scrollbar-width: thin;
   text-decoration: none !important;
+  ::-moz-selection { /* Code for Firefox */
+    color: black !important;
+    background: $select-color!important;
+  }
+
+  ::selection {
+    color: black !important;
+    background:  $select-color !important;
+  }
 }
 
 body{

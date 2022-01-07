@@ -3,20 +3,27 @@
     <PatternConstructionKitImage />
     <PatternDetailInfo />
     <SampleIllustration />
+    <Examples />
     <SimilarPatternsIllustrations />
   </div>
 </template>
 
 <script>
-
-import '../../basicVueMaterialImports';
+import "../../basicVueMaterialImports";
 import PatternConstructionKitImage from "./PatternConstructionKitImage";
 import PatternDetailInfo from "./patternInfo/PatternDetailInfo";
 import SampleIllustration from "./sampleIllustration/SampleIllustration";
 import SimilarPatternsIllustrations from "./SimilarPatternsIllustrations";
+import Examples from "./examples/Examples";
 export default {
   name: "Content",
-  components: { SimilarPatternsIllustrations, SampleIllustration, PatternDetailInfo,  PatternConstructionKitImage },
+  components: {
+    Examples,
+    SimilarPatternsIllustrations,
+    SampleIllustration,
+    PatternDetailInfo,
+    PatternConstructionKitImage,
+  },
 };
 </script>
 
