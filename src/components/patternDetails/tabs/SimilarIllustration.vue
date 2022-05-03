@@ -3,11 +3,9 @@
     <router-link to="/pattern/1">
       <div class="similar-pattern-card">
         <img
+          class=""
           :src="
-            require('@/assets/patterns' +
-              '/' +
-              similarPattern.image +
-              '.png')
+            require('@/assets/patterns' + '/' + similarPattern.image + '.png')
           "
           alt="similar attern image"
         />
@@ -24,7 +22,7 @@ import FacetPreview from "./FacetPreview";
 export default {
   name: "SimilarIllustration",
   components: { FacetPreview },
-  props: ['similarPattern']
+  props: ["similarPattern"],
 };
 </script>
 
@@ -43,7 +41,6 @@ export default {
 }
 
 .similar-pattern-card {
-
   height: fit-content;
   width: 100%;
   margin: 10px;
@@ -55,7 +52,7 @@ export default {
   padding: 1%;
 }
 
-.pattern-name{
+.pattern-name {
   font-weight: bold;
   position: absolute;
   bottom: 3%;
@@ -84,5 +81,6 @@ a {
 
 img {
   height: 250px;
+  margin: 0.5rem 1rem 0.5rem 1rem;
 }
 </style>

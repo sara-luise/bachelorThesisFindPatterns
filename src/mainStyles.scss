@@ -1,18 +1,18 @@
-$element-base-color: #2e1f71;
-$grid-base-color: #9489d0;
-$layout-structure-base-color: #d7d1f9;
-$search-task-base-color: #d3d3d3;
-$attribute-type-base-color: #f4f26f;
-$data-structure-base-color: #f4d26f;
+$element-base-color: rgb(55, 8, 122); //#37087A
+$grid-base-color: rgb(99, 63, 159); //#633F9F
+$layout-structure-base-color: rgb(142, 122, 199); //#8E7AC7
+$search-task-base-color: rgb(246, 198, 101);  //#F6C665
+$attribute-type-base-color: rgb(172, 210, 84);  //#ACD254
+$data-structure-base-color: rgb(128, 161, 35);  //#80A123
 
 
 //for background
-$background-element-base-color: rgba(46, 31, 113, 0.15);
-$background-grid-base-color: rgba(148, 137, 208, 0.15);
-$background-layout-structure-base-color: rgba(215, 209, 249, 0.15);
-$background-search-task-base-color: rgba(211, 211, 211, 0.15);
-$background-data-structure-base-color: rgba(244, 210, 111, 0.15);
-$background-attribute-type-base-color: rgba(244, 242, 111, 0.15);
+$background-element-base-color: rgba(87, 30, 171, 0.15);
+$background-grid-base-color: rgba(112, 73, 178, 0.15);
+$background-layout-structure-base-color: rgba(142, 122, 199, 0.15);
+$background-search-task-base-color: rgba(246, 198, 101, 0.15);
+$background-data-structure-base-color: rgba(199, 243, 107, 0.15);
+$background-attribute-type-base-color: rgba(154, 194, 53, 0.15);
 
 $select-color: rgba(148, 137, 208, 0.56);
 

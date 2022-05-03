@@ -45,8 +45,8 @@ export default {
           image: "Facettice",
         },
         {
-          name: "TagCircus",
-          image: "TagCircus",
+          name: "Movie Recommenderi",
+          image: "Movie Recommenderi",
         },
       ],
       similarPatterns: [

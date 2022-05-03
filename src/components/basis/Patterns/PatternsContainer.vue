@@ -1,18 +1,10 @@
 <template>
   <div class="patters-container">
     <PatternPreview
-      :pattern-name="'(Stacked) Radial Bar Chart'"
-      :image-name="'(Stacked)-radial-bar-chart'"
+      v-for="pattern in patterns"
+      :pattern="pattern"
+      :key="pattern.uid"
     />
-    <PatternPreview
-      :pattern-name="'(Zoomable) Facet Filter'"
-      :image-name="'(zoomable)-facet-filter'"
-    />
-    <PatternPreview
-      :pattern-name="'Tile View With Subsets'"
-      :image-name="'tile-view-with-subsets'"
-    />
-
   </div>
 </template>
 
@@ -21,6 +13,7 @@ import PatternPreview from "./PatternPreview";
 export default {
   name: "PatternsContainer",
   components: { PatternPreview },
+  props: ["patterns"],
 };
 </script>
 
@@ -31,10 +24,10 @@ export default {
   background: linear-gradient(
     200deg,
     ms.$background-element-base-color 0%,
-    ms.$background-grid-base-color 30%,
-    ms.$background-layout-structure-base-color 50%,
-    ms.$background-search-task-base-color 60%,
-    ms.$background-attribute-type-base-color 80%,
+    ms.$background-grid-base-color 20%,
+    ms.$background-layout-structure-base-color 30%,
+    ms.$background-search-task-base-color 50%,
+    ms.$background-attribute-type-base-color 70%,
     ms.$background-data-structure-base-color 100%
   );
   overflow: scroll;

@@ -1,8 +1,11 @@
 <template>
   <div class="facet-items-layout">
     <div class="facet-layout">
-      <img :src="require('@/assets/' + item.imageName + '.png')" />
-      <p>{{ item.description }}</p>
+      <img
+        :src="require('@/assets/' + item.imageName + '.png')"
+        alt="facet image"
+      />
+      <p>{{ item.name }}</p>
     </div>
     <div v-if="item.line" class="horizontal-divider"></div>
   </div>
@@ -21,6 +24,7 @@ export default {
   flex-direction: row;
   align-content: center;
   margin-top: 10px;
+  height: fit-content;
 }
 
 .facet-layout {
@@ -31,7 +35,7 @@ export default {
   margin: 0 3px;
 }
 
-.horizontal-divider{
+.horizontal-divider {
   background: #bbb;
   width: 1px;
   height: 60%;

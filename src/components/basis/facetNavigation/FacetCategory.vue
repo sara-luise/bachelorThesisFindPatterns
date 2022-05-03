@@ -19,15 +19,21 @@
         <span class="md-list-item-text">{{ itemList.header }}</span>
 
         <md-list
-          v-bind:style="{ borderLeftColor: itemList.color }"
+          v-bind:class="[itemList.color]"
           slot="md-expand"
+          class="category-facet-list"
         >
           <md-list-item
             class="md-inset"
             v-for="item in itemList.elements"
             :key="item.description"
           >
-            <FacetItem class="try" :item="item" />
+            <FacetItem
+              class="try"
+              :item="item"
+              :add-selected-facet="addSelectedFacet"
+              :remove-facet="removeFacet"
+            />
           </md-list-item>
         </md-list>
       </md-list-item>
@@ -41,12 +47,37 @@ import FacetItem from "./FacetItem";
 export default {
   name: "FacetCategory",
   components: { FacetItem },
-  props: ["categoryItemsList"],
+  props: ["categoryItemsList", "addSelectedFacet", "removeFacet"],
 };
 </script>
 
 <style lang="scss">
 @use "../../../mainStyles" as ms;
+
+.color {
+  &-element {
+    border-left-color: ms.$element-base-color;
+  }
+  &-grid {
+    border-left-color: ms.$grid-base-color;
+  }
+  &-layout-structure {
+    border-left-color: ms.$layout-structure-base-color;
+  }
+  &-attribute-type {
+    border-left-color: ms.$attribute-type-base-color;
+  }
+  &-attribute-type {
+    border-left-color: ms.$attribute-type-base-color;
+  }
+
+  &-attribute-type {
+    border-left-color: ms.$attribute-type-base-color;
+  }
+  &-data-structure {
+    border-left-color: ms.$data-structure-base-color;
+  }
+}
 
 .category-color-spectrum-building-blocks {
   border-image: linear-gradient(
@@ -65,6 +96,10 @@ export default {
       ms.$data-structure-base-color
     )
     1 100%;
+}
+
+.category-facet-list {
+  width: 18rem;
 }
 
 .try {

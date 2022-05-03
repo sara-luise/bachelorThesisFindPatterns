@@ -15,6 +15,11 @@ import Content from "../components/patternDetails/Content";
 export default {
   name: "DetailPattern",
   components: { Content },
+  data() {
+    return {
+      pattern: this.$root.$data.patternService.getByUid(this.$route.params.id),
+    };
+  },
 };
 </script>
 
@@ -28,7 +33,6 @@ export default {
   position: relative;
   align-content: center;
 }
-
 
 .format-back-btn {
   display: flex;

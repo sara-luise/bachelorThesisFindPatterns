@@ -4,7 +4,7 @@
       :src="
         require('@/assets/patterns' +
           '/' +
-          '(Stacked)-radial-bar-chart' +
+          '(stacked)-radial-bar-chart' +
           '.png')
       "
       alt="pattern image"

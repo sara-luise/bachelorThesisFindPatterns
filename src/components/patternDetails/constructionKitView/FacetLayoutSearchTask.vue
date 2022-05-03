@@ -1,13 +1,13 @@
 <template>
   <div class="facet-layout">
-    <p>{{ item}}</p>
+    <p>{{ item }}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: "FacetLayoutSearchTask",
-  props: ["item"]
+  props: ["item"],
 };
 </script>
 
@@ -29,5 +29,4 @@ p {
   font-size: x-large;
   margin: 0 10px;
 }
-
 </style>

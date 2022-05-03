@@ -10,7 +10,7 @@ import PatternImage from "./PatternImage";
 import ConstructionKitOverview from "./constructionKitView/ConstructionKitOverview";
 export default {
   name: "PatternConstructionKitImage",
-  components: { ConstructionKitOverview,  PatternImage },
+  components: { ConstructionKitOverview, PatternImage },
 };
 </script>
 

@@ -1,14 +1,14 @@
 <template>
   <div class="facet-view-layout border">
     <div class="rotate">
-      <p>Interactions</p></div>
+      <p>Interactions</p>
+    </div>
     <InteractionLayout
       class="facet-view-layout"
       :item="interaction"
       v-for="interaction in interactionsList"
       :key="interaction"
     />
-
   </div>
 </template>
 
@@ -56,10 +56,9 @@ export default {
   height: fit-content;
   flex-wrap: wrap;
   width: fit-content;
-
 }
 
-.border{
+.border {
   border-bottom: 3px solid;
   border-image: linear-gradient(
       90deg,
@@ -69,17 +68,17 @@ export default {
       ms.$search-task-base-color,
       ms.$attribute-type-base-color,
       ms.$data-structure-base-color
-  )
-  10;
+    )
+    10;
 }
 
-.rotate{
+.rotate {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 -20px 0 -28px;
 }
-p{
+p {
   transform: rotate(-90deg);
   margin: 0;
 }

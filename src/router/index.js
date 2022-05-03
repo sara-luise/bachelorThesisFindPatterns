@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import NotFound from "../view/NotFound";
 
 Vue.use(VueRouter);
 
@@ -11,14 +12,12 @@ const routes = [
       import(/* webpackChunkName: "base" */ "../view/BaseView.vue"),
   },
   {
-    path: "/pattern",
+    path: "/patterns/:uid",
     name: "DetailPattern",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "base" */ "../view/DetailPattern.vue"),
   },
+  { path: "/:pathMatch(.*)*", name: "NotFound", component: NotFound },
 ];
 
 const router = new VueRouter({

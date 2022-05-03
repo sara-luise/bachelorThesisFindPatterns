@@ -1,198 +1,91 @@
 <template>
   <div class="search-bar-div">
-    <md-autocomplete
-      v-model="value"
-      :md-options="patterns"
-      @md-changed="getPatterns"
-      @md-opened="getPatterns"
-    >
-      <label>Patternname</label>
-
-      <template slot="md-autocomplete-item" slot-scope="{ item }">
-        {{ item.name }}
-      </template>
-    </md-autocomplete>
+    <md-field>
+      <label class="search-bar-label" for="search-bar"
+        >Search for patterns</label
+      >
+      <md-input
+        name="search-bar"
+        class="search-input"
+        id="search-bar"
+        v-model="search"
+        v-on:focus="showList()"
+        v-click-outside="hideList"
+      />
+    </md-field>
+    <div v-if="listShown" class="search-list">
+      <router-link
+        :to="'/patterns/' + pattern.uid"
+        class="search-list-item"
+        v-for="pattern in filteredList"
+        :key="pattern"
+      >
+        <div class="search-list-item-container">
+          <img
+            class="search-list-item-container-image"
+            :src="
+              require('@/assets/patterns' + '/' + pattern.imageName + '.png')
+            "
+            alt="pattern image"
+          />
+          {{ pattern.name }}
+        </div>
+      </router-link>
+    </div>
   </div>
 </template>
 
 <script>
-import "../../basicVueMaterialImports";
+import Vue from "vue";
 
 export default {
   name: "SearchBar",
-  data: () => ({
-    value: null,
-    patternList: [
-      {
-        id: 1,
-        name: "(Stacked) radial bar chart",
-      },
-      {
-        id: 2,
-        name: "(zoomable) facet filter",
-      },
-      {
-        id: 3,
-        name: "configurator with detailed information",
-      },
-      {
-        id: 4,
-        name: "data view with text and picture",
-      },
-      {
-        id: 5,
-        name: "flexible areas",
-      },
-      {
-        id: 6,
-        name: "focus area with (detail)-glyphs",
-      },
-      {
-        id: 7,
-        name: "fold-out list of results with text",
-      },
-      {
-        id: 8,
-        name: "glyph cluster",
-      },
-      {
-        id: 9,
-        name: "glyphs with legend",
-      },
-      {
-        id: 10,
-        name: "hierarchical configuration menu",
-      },
-      {
-        id: 11,
-        name: "hierarchical glyph cluster",
-      },
-      {
-        id: 12,
-        name: "histogram filter",
-      },
-      {
-        id: 13,
-        name: "image based preference selection",
-      },
-      {
-        id: 14,
-        name: "indented taxonomy",
-      },
-      {
-        id: 15,
-        name: "interactive point cloud",
-      },
-      {
-        id: 16,
-        name: "map-view with results ranking",
-      },
-      {
-        id: 17,
-        name: "mood board with glyph cluster",
-      },
-      {
-        id: 18,
-        name: "multi-column keyword filter",
-      },
-      {
-        id: 19,
-        name: "ordered filter history",
-      },
-      {
-        id: 20,
-        name: "parallel coordinates",
-      },
-      {
-        id: 21,
-        name: "parallel sets",
-      },
-      {
-        id: 22,
-        name: "pixel cluster",
-      },
-      {
-        id: 23,
-        name: "radial scatter plot with glyphs",
-      },
-      {
-        id: 24,
-        name: "result list with picture and text",
-      },
-      {
-        id: 25,
-        name: "scatter plot with glyphs",
-      },
-      {
-        id: 26,
-        name: "scrollable detailed view",
-      },
-      {
-        id: 27,
-        name: "sieve illustration with filter",
-      },
-      {
-        id: 28,
-        name: "smart lattice",
-      },
-      {
-        id: 29,
-        name: "tiles with filter concept",
-      },
-      {
-        id: 30,
-        name: "tiles view with glyphs",
-      },
-      {
-        id: 31,
-        name: "tiles view with images",
-      },
-      {
-        id: 32,
-        name: "tiles view with subsets",
-      },
-      {
-        id: 33,
-        name: "weighted bézier curves",
-      },
-    ],
-    patterns: [],
-  }),
+  data() {
+    return {
+      patternList: this.$root.$data.patternService.getPatternsForSearch(),
+      search: "",
+      listShown: false,
+    };
+  },
   methods: {
-    getPatterns(searchTerm) {
-      this.patterns = new Promise((resolve) => {
-        window.setTimeout(() => {
-          if (!searchTerm) {
-            resolve(this.patternList);
-          } else {
-            const term = searchTerm.toString().toLowerCase();
-
-            resolve(
-              this.patternList.filter(({ name }) =>
-                name.toString().toLowerCase().includes(term)
-              )
-            );
-          }
-        }, 500);
+    showList() {
+      this.listShown = true;
+    },
+    hideList() {
+      this.listShown = false;
+    },
+  },
+  computed: {
+    filteredList() {
+      return this.patternList.filter((pattern) => {
+        return pattern.name.toLowerCase().includes(this.search.toLowerCase());
       });
     },
   },
 };
+Vue.directive("click-outside", {
+  bind(el, binding, vnode) {
+    var vm = vnode.context;
+    var callback = binding.value;
+
+    el.clickOutsideEvent = function (event) {
+      if (!(el === event.target || el.contains(event.target))) {
+        return callback.call(vm, event);
+      }
+    };
+    document.body.addEventListener("click", el.clickOutsideEvent);
+  },
+  unbind(el) {
+    document.body.removeEventListener("click", el.clickOutsideEvent);
+  },
+});
 </script>
 
 <style lang="scss">
 @use "../../mainStyles" as ms;
 
-.search-bar-div {
-  width: 400px;
-  display: flex;
-  margin-top: 10px;
-  margin-right: 2rem;
-}
-
-.md-list {
-  background: white !important;
-}
+$width: 30rem;
+$margin-right: 2rem;
 
 .md-field.md-theme-default::before {
   background: linear-gradient(
@@ -206,7 +99,55 @@ export default {
   );
 }
 
-.md-field.md-theme-default.md-focused label {
-  color: ms.$element-base-color;
+.search {
+  &-bar {
+    &-label {
+      color: ms.$element-base-color !important;
+    }
+
+    &-div {
+      width: $width;
+      display: flex;
+      margin-top: 10px;
+      margin-right: $margin-right;
+    }
+  }
+
+  &-input {
+    font-size: large !important;
+  }
+
+  &-list {
+    position: absolute;
+    top: 4rem;
+    max-height: 25rem;
+    height: fit-content;
+    background: white;
+    padding: 0.5rem;
+    z-index: 3;
+    width: $width;
+    margin-right: $margin-right;
+    overflow-y: scroll;
+    background: rgba(250, 250, 250, 0.95);
+    border-left: gray solid 2px;
+
+    &-item {
+      padding: 0.5rem 0.4rem;
+
+      &-container {
+        font-size: x-large;
+        color: black !important;
+
+        &:hover {
+          background: rgba(240, 240, 240, 0.95);
+        }
+
+        &-image {
+          width: 4rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
 }
 </style>

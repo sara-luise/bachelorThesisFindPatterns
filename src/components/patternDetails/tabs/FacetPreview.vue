@@ -10,7 +10,11 @@
       v-for="facet in facetItems.searchTaskList"
       :key="facet"
     />
-    <FacetLayout :item="facet" v-for="facet in facetItems.dataList" :key="facet" />
+    <FacetLayout
+      :item="facet"
+      v-for="facet in facetItems.dataList"
+      :key="facet"
+    />
   </div>
 </template>
 
@@ -20,8 +24,8 @@ import FacetLayoutSearchTask from "../constructionKitView/FacetLayoutSearchTask"
 export default {
   name: "FacetPreview",
   components: { FacetLayoutSearchTask, FacetLayout },
-  props: ['facetItems'],
-  };
+  props: ["facetItems"],
+};
 </script>
 
 <style lang="scss" scoped>

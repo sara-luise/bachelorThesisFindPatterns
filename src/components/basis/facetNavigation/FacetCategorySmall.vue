@@ -2,13 +2,21 @@
   <md-list-item md-expand>
     <span class="md-list-item-text">{{ categoryItemsList[0].name }}</span>
 
-    <md-list slot="md-expand" class="category-color-spectrum-search-task">
+    <md-list
+      slot="md-expand"
+      class="category-color-spectrum-search-task category-facet-list"
+    >
       <md-list-item
         class="md-inset"
         v-for="item in categoryItemsList[1]"
         :key="item.header"
       >
-        <FacetItemSmall class="try" :item="item" />
+        <FacetItemSmall
+          class="facet-item"
+          :item="item"
+          :add-selected-facet="addSelectedFacet"
+          :remove-facet="removeFacet"
+        />
       </md-list-item>
     </md-list>
   </md-list-item>
@@ -20,7 +28,7 @@ import FacetItemSmall from "./FacetItemSmall";
 export default {
   name: "FacetCategorySmall",
   components: { FacetItemSmall },
-  props: ["categoryItemsList"],
+  props: ["categoryItemsList", "addSelectedFacet", "removeFacet"],
 };
 </script>
 
@@ -31,7 +39,11 @@ export default {
   border-left-color: ms.$search-task-base-color;
 }
 
-.try {
+.category-facet-list {
+  width: 18rem;
+}
+
+.facet-item {
   margin: 0;
   padding: 0;
 }

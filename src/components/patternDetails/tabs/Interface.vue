@@ -3,12 +3,7 @@
     <div class="interface-card">
       <p class="pattern-name">{{ item.name }}</p>
       <img
-        :src="
-          require('@/assets/interfaces' +
-            '/' +
-            item.image +
-            '.png')
-        "
+        :src="require('@/assets/interfaces' + '/' + item.image + '.png')"
         alt="similar attern image"
       />
     </div>
@@ -18,7 +13,7 @@
 <script>
 export default {
   name: "Interface",
-  props: ['item']
+  props: ["item"],
 };
 </script>
 
@@ -44,11 +39,9 @@ export default {
   padding: 1%;
 }
 
-p{
+p {
   font-weight: bold;
   font-size: large;
   margin: 0;
 }
-
-
 </style>
