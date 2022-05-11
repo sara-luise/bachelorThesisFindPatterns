@@ -99,8 +99,8 @@ img {
     ms.$background-grid-base-color 20%,
     ms.$background-layout-structure-base-color 30%,
     ms.$background-search-task-base-color 50%,
-    ms.$background-attribute-type-base-color 70%,
-    ms.$background-data-structure-base-color 100%
+    ms.$background-data-structure-base-color 100%,
+    ms.$background-attribute-type-base-color 70%
   );
   width: 70%;
 }

@@ -25,8 +25,6 @@ import Examples from "./examples/Examples";
 import DetailHeader from "./detailHeader/DetailHeader";
 import InteractionsView from "./interactionsKit/InteractionsView";
 
-//this.$root.$data.patternService.getSimilarPatterns();
-
 export default {
   name: "Content",
   components: {
