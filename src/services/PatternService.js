@@ -1855,10 +1855,6 @@ export class patternService {
     );
   }
 
-  getAllPatterns() {
-    return this.patterns;
-  }
-
   getByUid(uid) {
     return this.patterns.find((pattern) => pattern.uid === uid);
   }
@@ -1917,5 +1913,38 @@ export class patternService {
     });
 
     return filteredPatterns;
+  }
+
+  getSimilarPatterns(mainPattern) {
+    let similarPatterns = [];
+
+    this.patterns.forEach((pattern) => {
+      if (pattern.uid !== mainPattern.uid) {
+        let count = 0;
+        mainPattern.facets.forEach((mainFacet) => {
+          if (
+            !mainFacet.includes("interaction") &&
+            pattern.facets.includes(mainFacet)
+          ) {
+            count++;
+          }
+        });
+        if (count > 0) {
+          similarPatterns.push({ pattern: pattern, facetCount: count });
+        }
+      }
+    });
+
+    return similarPatterns
+      .sort(function (a, b) {
+        if (a.facetCount < b.facetCount) {
+          return 1;
+        }
+        if (a.facetCount > b.facetCount) {
+          return -1;
+        }
+        return 0;
+      })
+      .slice(0, 10);
   }
 }

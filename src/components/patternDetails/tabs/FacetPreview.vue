@@ -2,18 +2,31 @@
   <div class="facet-preview-layout">
     <FacetLayout
       :item="facet"
-      v-for="facet in facetItems.buildingBlocksList"
-      :key="facet"
+      v-for="facet in $root.$data.facetService.getSpecificFacetsOfGroups(
+        facetItems,
+        ['element', 'grid', 'layout-structure']
+      )"
+      :key="facet.uid"
+      :after-facets-divider="afterFacetsDivider"
+      :in-main-facets="mainFacetsContainFacet(mainFacets, facet)"
     />
     <FacetLayoutSearchTask
       :item="facet"
-      v-for="facet in facetItems.searchTaskList"
-      :key="facet"
+      v-for="facet in $root.$data.facetService.getSpecificFacetsOfGroups(
+        facetItems,
+        ['searchTask']
+      )"
+      :key="facet.uid"
+      :in-main-facets="mainFacetsContainFacet(mainFacets, facet)"
     />
     <FacetLayout
       :item="facet"
-      v-for="facet in facetItems.dataList"
-      :key="facet"
+      v-for="facet in $root.$data.facetService.getSpecificFacetsOfGroups(
+        facetItems,
+        ['attribute-type', 'data-structure']
+      )"
+      :key="facet.uid"
+      :in-main-facets="mainFacetsContainFacet(mainFacets, facet)"
     />
   </div>
 </template>
@@ -24,7 +37,12 @@ import FacetLayoutSearchTask from "../constructionKitView/FacetLayoutSearchTask"
 export default {
   name: "FacetPreview",
   components: { FacetLayoutSearchTask, FacetLayout },
-  props: ["facetItems"],
+  props: ["mainFacets", "facetItems", "afterFacetsDivider"],
+  methods: {
+    mainFacetsContainFacet(mainFacets, item) {
+      return mainFacets.includes(item.uid);
+    },
+  },
 };
 </script>
 

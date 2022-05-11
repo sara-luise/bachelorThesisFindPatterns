@@ -146,7 +146,7 @@ export default {
   display: grid;
   grid-template-columns: 22rem auto;
   flex: 1;
-  height: 94vh;
+  height: 92vh;
   margin: 0 0 0 1%;
 }
 </style>

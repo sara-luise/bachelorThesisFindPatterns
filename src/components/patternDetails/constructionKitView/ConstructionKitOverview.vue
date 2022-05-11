@@ -1,16 +1,15 @@
 <template>
   <div class="construction-kit-layout">
-    <FacetView />
-    <InteractionsView />
+    <FacetView :pattern="pattern" />
   </div>
 </template>
 
 <script>
 import FacetView from "./FacetView";
-import InteractionsView from "./interactionsKit/InteractionsView";
 export default {
   name: "ConstructionKitOverview",
-  components: { InteractionsView, FacetView },
+  components: { FacetView },
+  props: ["pattern"],
 };
 </script>
 
@@ -19,6 +18,6 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 </style>

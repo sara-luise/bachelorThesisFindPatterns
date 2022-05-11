@@ -1,16 +1,22 @@
 <template>
   <div id="tab-interfaces" class="similar-patterns-layout">
-    <router-link to="/pattern/1">
+    <router-link :to="'/patterns/' + similarPattern.uid">
       <div class="similar-pattern-card">
         <img
-          class=""
           :src="
-            require('@/assets/patterns' + '/' + similarPattern.image + '.png')
+            require('@/assets/patterns' +
+              '/' +
+              similarPattern.imageName +
+              '.png')
           "
-          alt="similar attern image"
+          alt="similar pattern image"
         />
         <div class="divider"></div>
-        <FacetPreview :facet-items="similarPattern.facetItems" />
+        <FacetPreview
+          :facet-items="similarPattern.facets"
+          :after-facets-divider="similarPattern.facetDividers"
+          :main-facets="mainFacets"
+        />
         <p class="pattern-name">{{ similarPattern.name }}</p>
       </div>
     </router-link>
@@ -22,7 +28,7 @@ import FacetPreview from "./FacetPreview";
 export default {
   name: "SimilarIllustration",
   components: { FacetPreview },
-  props: ["similarPattern"],
+  props: ["mainFacets", "similarPattern"],
 };
 </script>
 
@@ -55,8 +61,12 @@ export default {
 .pattern-name {
   font-weight: bold;
   position: absolute;
-  bottom: 3%;
-  right: 3%;
+  bottom: 1rem;
+  right: 1rem;
+  line-height: 2.5rem;
+  margin-bottom: 0;
+  align-self: flex-end;
+  font-size: 2rem;
 }
 
 a {

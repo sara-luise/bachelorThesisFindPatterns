@@ -3,18 +3,13 @@
     <p>Sample Illustration</p>
     <div class="sample-layout">
       <img
-        :src="
-          require('@/assets/pattern_samples' +
-            '/' +
-            '(stacked)-radial-bar-chart' +
-            '.png')
-        "
+        v-for="imageName in patternSampleIllustration.imageNames"
+        :key="imageName"
+        :src="require('@/assets/pattern_samples/' + imageName + '.png')"
         alt="pattern image"
       />
       <div class="sample-description">
-        Example from the prototype Facettice as a simple bar chart (left) and
-        TagCircus with stacked bar graph (right). Furthermore, this shows right
-        example the overlay with Bézier curves.
+        {{ patternSampleIllustration.imageExplanation }}
       </div>
     </div>
   </div>
@@ -23,30 +18,26 @@
 <script>
 export default {
   name: "SampleIllustration",
+  props: ["patternSampleIllustration"],
 };
 </script>
 
 <style lang="scss" scoped>
 .sample-illustration-layout {
   width: 100%;
-  margin: 1% 3% 3% 3%;
+  margin: 1rem 0;
 }
 
 .sample-layout {
   display: flex;
   flex-direction: row;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 img {
   max-width: 40%;
   max-height: 45rem;
-  transform: scale(0.95);
-  transition: transform 330ms ease-in-out;
-}
-
-img:hover {
-  transform: scale(1);
+  border: gray solid 0.05rem;
 }
 
 p {
@@ -54,10 +45,10 @@ p {
 }
 
 .sample-description {
-  margin: 1%;
+  margin-left: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 40%;
 }
 </style>

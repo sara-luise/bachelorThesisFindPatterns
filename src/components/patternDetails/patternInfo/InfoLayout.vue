@@ -1,20 +1,20 @@
 <template>
   <div class="info-layout">
     <div class="left">
-      <div v-for="item in leftList" :key="item" class="list-layout">
+      <div v-for="item in leftList" :key="item.header" class="list-layout">
         <div class="info-text">{{ item.header }}</div>
         <div></div>
         <div class="info-text">{{ item.body }}</div>
       </div>
     </div>
+    <div class="grid-divider"></div>
     <div class="right">
-      <div v-for="item in rightList" :key="item" class="list-layout">
+      <div v-for="item in rightList" :key="item.header" class="list-layout">
         <div class="info-text">{{ item.header }}</div>
         <div></div>
         <div class="info-text">{{ item.body }}</div>
       </div>
     </div>
-    <div class="needed-layout"></div>
   </div>
 </template>
 
@@ -30,7 +30,8 @@ export default {
 
 .info-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr 5rem;
+  grid-template-columns: 1fr auto 1fr auto;
+  height: max-content;
 }
 
 .list-layout {
@@ -50,6 +51,11 @@ export default {
   height: fit-content;
 }
 
+.grid-divider {
+  width: 0.03rem;
+  background: gray;
+}
+
 .right {
   background: linear-gradient(
     to bottom,
@@ -59,10 +65,6 @@ export default {
   );
   margin-left: 3%;
   height: fit-content;
-}
-
-.needed-layout {
-  background: white;
 }
 
 .info-text {

@@ -339,97 +339,97 @@ export class facetService {
       {
         uid: "interaction_adjust-interaction",
         name: "Adjust",
-        imageName: "interaction/adjust-interaction",
+        imageName: "interactions/adjust-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_aggregate-interaction",
         name: "Aggregate",
-        imageName: "interaction/aggregate-interaction",
+        imageName: "interactions/aggregate-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_append-interaction",
         name: "Append",
-        imageName: "interaction/append-interaction",
+        imageName: "interactions/append-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_distort-interaction",
         name: "Distort",
-        imageName: "interaction/distort-interaction",
+        imageName: "interactions/distort-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_exclude-interaction",
         name: "Exclude",
-        imageName: "interaction/exclude-interaction",
+        imageName: "interactions/exclude-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_filter-interaction",
         name: "Filter",
-        imageName: "interaction/filter-interaction",
+        imageName: "interactions/filter-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_group-interaction",
         name: "Group",
-        imageName: "interaction/group-interaction",
+        imageName: "interactions/group-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_highlight-interaction",
         name: "Highlight",
-        imageName: "interaction/highlight-interaction",
+        imageName: "interactions/highlight-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_inspect-interaction",
         name: "Inspect",
-        imageName: "interaction/inspect-interaction",
+        imageName: "interactions/inspect-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_navigate-interaction",
         name: "Navigate",
-        imageName: "interaction/navigate-interaction",
+        imageName: "interactions/navigate-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_pan-interaction",
         name: "Pan",
-        imageName: "interaction/pan-interaction",
+        imageName: "interactions/pan-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_remove-interaction",
         name: "Remove",
-        imageName: "interaction/remove-interaction",
+        imageName: "interactions/remove-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_rotate-interaction",
         name: "Rotate",
-        imageName: "interaction/rotate-interaction",
+        imageName: "interactions/rotate-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_select-interaction",
         name: "Select",
-        imageName: "interaction/select-interaction",
+        imageName: "interactions/select-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_sort-interaction",
         name: "Sort",
-        imageName: "interaction/sort-interaction",
+        imageName: "interactions/sort-interaction",
         category: "interaction",
       },
       {
         uid: "interaction_zoom-interaction",
         name: "Zoom",
-        imageName: "interaction/zoom-interaction",
+        imageName: "interactions/zoom-interaction",
         category: "interaction",
       }
     );
@@ -443,6 +443,21 @@ export class facetService {
 
   getByUid(uid) {
     return this.facets.find((facet) => facet.uid === uid);
+  }
+
+  getSpecificFacetsOfGroups(facets, groups) {
+    let facetGroups = [];
+
+    facets.forEach((facetUid) => {
+      let facet = this.getByUid(facetUid);
+
+      groups.forEach((group) => {
+        if (facet.category === group) {
+          facetGroups.push(facet);
+        }
+      });
+    });
+    return facetGroups;
   }
 
   convertListForNavigation(list) {

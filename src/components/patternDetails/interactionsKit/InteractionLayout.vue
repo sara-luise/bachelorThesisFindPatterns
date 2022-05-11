@@ -3,18 +3,21 @@
     <div class="facet-layout">
       <p>{{ item.name }}</p>
       <img
-        :src="require('@/assets/building blocks/' + item.imageName + '.png')"
+        :src="require('@/assets/' + item.imageName + '.png')"
         alt="facet image"
       />
     </div>
-    <div v-if="item.line" class="horizontal-divider"></div>
+    <div
+      v-if="afterFacetsDivider.includes(item.uid)"
+      class="horizontal-divider"
+    ></div>
   </div>
 </template>
 
 <script>
 export default {
   name: "InteractionLayout",
-  props: ["item"],
+  props: ["item", "afterFacetsDivider"],
 };
 </script>
 
@@ -37,7 +40,7 @@ export default {
 .horizontal-divider {
   background: #bbb;
   width: 1px;
-  height: 60%;
+  margin-top: 1rem;
 }
 
 p {

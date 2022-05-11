@@ -3,7 +3,7 @@
     <div class="interface-card">
       <p class="pattern-name">{{ item.name }}</p>
       <img
-        :src="require('@/assets/interfaces' + '/' + item.image + '.png')"
+        :src="require('@/assets/interfaces' + '/' + item.imageName + '.png')"
         alt="similar attern image"
       />
     </div>

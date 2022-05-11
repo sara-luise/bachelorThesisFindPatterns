@@ -75,7 +75,7 @@ export default {
   justify-content: center;
 
   margin: 0;
-  height: 92vh;
+  height: 90vh;
   overflow-y: scroll;
 }
 

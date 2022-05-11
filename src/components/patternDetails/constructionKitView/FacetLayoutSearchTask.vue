@@ -1,13 +1,13 @@
 <template>
   <div class="facet-layout">
-    <p>{{ item }}</p>
+    <p>{{ item.name }}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: "FacetLayoutSearchTask",
-  props: ["item"],
+  props: ["item", "inMainFacets"],
 };
 </script>
 
@@ -18,8 +18,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  margin: 14px 3px 0 3px;
+  justify-content: center;
+  margin: 14px 0.5rem;
 }
 
 p {
@@ -27,6 +27,6 @@ p {
   color: ms.$search-task-base-color;
   font-weight: bold;
   font-size: x-large;
-  margin: 0 10px;
+  margin: 0;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="pattern-detail-body">
+  <div :key="$route.fullPath" class="pattern-detail-body">
     <router-link to="/" class="back-btn">
       <div class="format-back-btn">
         <img :src="require('@/assets/back_frame.png')" alt="back icon" />
@@ -28,7 +28,7 @@ export default {
 
 .pattern-detail-body {
   margin: 1% 0 1% 1%;
-  height: 700rem;
+  height: 1000rem;
   overflow-y: scroll;
   position: relative;
   align-content: center;
@@ -42,6 +42,8 @@ export default {
   padding: 0 10px;
   z-index: 10;
   background: white;
+  width: fit-content;
+  box-shadow: #bbbbbb 0 5px 15px;
   img {
     background: linear-gradient(
       to bottom,
@@ -73,15 +75,16 @@ a:hover {
 }
 
 .format-back-btn:hover {
-  background: ms.$background-search-task-base-color;
+  background: rgb(245, 245, 245);
 }
 
 .back-btn {
-  position: absolute;
+  position: sticky;
   top: 5px;
   left: 5px;
   box-shadow: #bbbbbb 0 5px 15px;
   background: white;
+  z-index: 100;
 }
 p {
   margin: 7px 0;

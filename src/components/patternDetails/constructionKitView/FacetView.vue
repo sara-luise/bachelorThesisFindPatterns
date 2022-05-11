@@ -1,21 +1,40 @@
 <template>
-  <div class="facet-view-layout">
-    <div class="facet-view-layout building-blocks-border">
-      <FacetLayout
-        :item="facet"
-        v-for="facet in buildingBlocksList"
-        :key="facet"
-      />
+  <div class="facets-layout">
+    <div class="facet-list facet-list-building-blocks">
+      <div class="facet-view-layout building-blocks">
+        <FacetLayout
+          :item="facet"
+          v-for="facet in getList(pattern.facets, [
+            'layout-structure',
+            'grid',
+            'element',
+          ])"
+          :key="facet.uid"
+          :after-facets-divider="pattern.facetDividers"
+        />
+      </div>
     </div>
-    <div class="facet-view-layout search-task-border">
-      <FacetLayoutSearchTask
-        :item="facet"
-        v-for="facet in searchTaskList"
-        :key="facet"
-      />
+    <div class="facet-list facet-list-search-task">
+      <div class="facet-view-layout search-task">
+        <FacetLayoutSearchTask
+          :item="facet"
+          v-for="facet in getList(pattern.facets, ['searchTask'])"
+          :key="facet.uid"
+        />
+      </div>
     </div>
-    <div class="facet-view-layout data-border">
-      <FacetLayout :item="facet" v-for="facet in dataList" :key="facet" />
+    <div class="facet-list facet-list-data">
+      <div class="facet-view-layout data">
+        <FacetLayout
+          :item="facet"
+          v-for="facet in getList(pattern.facets, [
+            'attribute-type',
+            'data-structure',
+          ])"
+          :key="facet.uid"
+          :after-facets-divider="pattern.facetDividers"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -26,90 +45,79 @@ import FacetLayoutSearchTask from "./FacetLayoutSearchTask";
 export default {
   name: "FacetView",
   components: { FacetLayoutSearchTask, FacetLayout },
-  data() {
-    return {
-      buildingBlocksList: [
-        {
-          imageName: "building blocks/text-element",
-          description: "Text",
-        },
-        {
-          imageName: "building blocks/rectangular-grid",
-          description: "Rectangular",
-        },
-        {
-          imageName: "building blocks/list-layout-structure",
-          description: "List",
-          line: true,
-        },
-        {
-          imageName: "building blocks/tiles-layout-structure",
-          description: "Tiles",
-        },
-      ],
-      searchTaskList: ["Formulate", "Trace", "Analyze"],
-      dataList: [
-        {
-          imageName: "data/nominal-attribute-type",
-          description: "Nominal",
-        },
-        {
-          imageName: "data/quanti-attribute-type",
-          description: "Quantitative",
-        },
-        {
-          imageName: "data/folksonomy-data-structure",
-          description: "Folksonomy",
-        },
-      ],
-    };
+  props: ["pattern"],
+  methods: {
+    getList(facets, groups) {
+      return this.$root.$data.facetService.getSpecificFacetsOfGroups(
+        facets,
+        groups
+      );
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
 @use "src/mainStyles" as ms;
+.facets-layout {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.facet-list {
+  display: flex;
+  width: 100%;
+
+  &-building-blocks {
+    justify-content: flex-end;
+  }
+
+  &-search-task {
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  &-data {
+    justify-content: flex-start;
+  }
+}
+
 .facet-view-layout {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  height: fit-content;
 
-  flex-wrap: wrap;
+  width: fit-content;
 }
 
-.building-blocks-border,
-.search-task-border,
-.data-border {
+.building-blocks,
+.search-task,
+.data {
+  width: fit-content;
   border-top: 3px solid;
 }
 
-.building-blocks-border {
+.building-blocks {
   border-image: linear-gradient(
       90deg,
-      ms.$element-base-color,
+      ms.$layout-structure-base-color,
       ms.$grid-base-color,
-      ms.$layout-structure-base-color
+      ms.$element-base-color
     )
     10;
 }
 
-.search-task-border {
+.search-task {
   border-top-color: ms.$search-task-base-color;
 }
 
-.data-border {
+.data {
   border-image: linear-gradient(
       90deg,
-      ms.$search-task-base-color,
-      ms.$attribute-type-base-color,
-      ms.$attribute-type-base-color,
-      ms.$attribute-type-base-color,
-      ms.$attribute-type-base-color,
       ms.$data-structure-base-color,
-      ms.$data-structure-base-color,
-      ms.$data-structure-base-color,
-      ms.$data-structure-base-color
+      ms.$attribute-type-base-color
     )
     10;
 }

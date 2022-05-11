@@ -14,6 +14,9 @@
       />
     </md-field>
     <div v-if="listShown" class="search-list">
+      <div v-if="filteredList.length === 0">
+        There are no patterns with '{{ search }}' in their names.
+      </div>
       <router-link
         :to="'/patterns/' + pattern.uid"
         class="search-list-item"
@@ -135,7 +138,7 @@ $margin-right: 2rem;
       padding: 0.5rem 0.4rem;
 
       &-container {
-        font-size: x-large;
+        font-size: large;
         color: black !important;
 
         &:hover {
