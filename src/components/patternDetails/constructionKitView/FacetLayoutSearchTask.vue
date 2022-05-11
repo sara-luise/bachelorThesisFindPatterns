@@ -1,6 +1,9 @@
 <template>
   <div class="facet-layout">
-    <p>{{ item.name }}</p>
+    <div class="brackets-white-space"></div>
+    <div class="layout" v-bind:class="{ 'in-main-facets': inMainFacets }">
+      <p>{{ item.name }}</p>
+    </div>
   </div>
 </template>
 
@@ -20,6 +23,28 @@ export default {
   align-items: center;
   justify-content: center;
   margin: 14px 0.5rem;
+  position: relative;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0.5rem;
+}
+
+.brackets-white-space {
+  position: absolute;
+  height: 100%;
+  background: white;
+  z-index: 50;
+  width: calc(100% - 0.7rem);
+}
+
+.in-main-facets {
+  border-radius: 0.1rem;
+  border: gray solid 2px;
 }
 
 p {
@@ -28,5 +53,6 @@ p {
   font-weight: bold;
   font-size: x-large;
   margin: 0;
+  z-index: 100;
 }
 </style>

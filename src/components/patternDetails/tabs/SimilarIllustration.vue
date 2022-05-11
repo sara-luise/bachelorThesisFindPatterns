@@ -67,6 +67,7 @@ export default {
   margin-bottom: 0;
   align-self: flex-end;
   font-size: 2rem;
+  z-index: 200;
 }
 
 a {

@@ -1492,7 +1492,6 @@ export class patternService {
           "interaction_pan-interaction",
           "interaction_inspect-interaction",
           "interaction_select-interaction",
-          "interaction_select-interaction",
           "data_set-data-structure",
           "data_ordinal-attribute-type",
           "searchTask_inspire",
