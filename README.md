@@ -1,6 +1,6 @@
 # findpatterns
 
-Only for research purposes.
+Only for research purposes !
 
 ## Project setup
 ```
