@@ -25,6 +25,7 @@
 
 <script>
 import FacetPreview from "./FacetPreview";
+
 export default {
   name: "SimilarIllustration",
   components: { FacetPreview },
@@ -34,6 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "src/mainStyles" as ms;
+
 .similar-patterns-layout {
   margin: 0 20px 20px 20px;
   min-width: 60%;

@@ -12,6 +12,7 @@
 
 <script>
 import Content from "../components/patternDetails/Content";
+
 export default {
   name: "DetailPattern",
   components: { Content },
@@ -44,6 +45,7 @@ export default {
   background: white;
   width: fit-content;
   box-shadow: #bbbbbb 0 5px 15px;
+
   img {
     background: linear-gradient(
       to bottom,
@@ -64,8 +66,10 @@ a {
     color: black;
     outline: none;
   }
+
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none !important;
 }
@@ -86,6 +90,7 @@ a:hover {
   background: white;
   z-index: 100;
 }
+
 p {
   margin: 7px 0;
 }

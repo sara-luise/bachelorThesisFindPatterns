@@ -1,9 +1,10 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import { facetService } from "./services/FacetService";
+import { brickService } from "./services/BrickService";
 import { patternService } from "./services/PatternService";
-require("./services/FacetService");
+
+require("./services/BrickService");
 
 Vue.config.productionTip = false;
 
@@ -11,7 +12,7 @@ new Vue({
   router,
   data: function () {
     return {
-      facetService: new facetService(),
+      brickService: new brickService(),
       patternService: new patternService(),
     };
   },

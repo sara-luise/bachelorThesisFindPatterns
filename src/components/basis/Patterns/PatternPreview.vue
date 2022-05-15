@@ -28,6 +28,7 @@
 <script>
 import FacetNavigationPatternPreview from "./FacetNavigationPatternPreview";
 import FacetNavigationSearchTaskPatternPreview from "./FacetNavigationSearchTaskPatternPreview";
+
 export default {
   name: "PatternPreview",
   components: {

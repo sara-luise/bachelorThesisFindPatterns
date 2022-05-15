@@ -6,6 +6,7 @@
 
 <script>
 import InfoLayout from "./InfoLayout";
+
 export default {
   name: "PatternDetailInfo",
   components: { InfoLayout },

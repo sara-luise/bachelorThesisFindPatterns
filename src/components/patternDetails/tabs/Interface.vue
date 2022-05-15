@@ -19,6 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "src/mainStyles" as ms;
+
 .interface-layout {
   margin: 0 20px 20px 20px;
   min-width: 60%;

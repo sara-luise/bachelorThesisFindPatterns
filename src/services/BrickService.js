@@ -1,11 +1,11 @@
-export class facetService {
-  facets = [];
+export class brickService {
+  bricks = [];
 
   constructor() {
     //<editor-fold desc="building blocks">
 
     //building blocks - elements
-    this.facets.push(
+    this.bricks.push(
       {
         uid: "blocks_text-element",
         name: "Text",
@@ -57,7 +57,7 @@ export class facetService {
     );
 
     //building blocks - grid
-    this.facets.push(
+    this.bricks.push(
       {
         uid: "blocks_rectangular-grid",
         name: "Rectangular",
@@ -85,7 +85,7 @@ export class facetService {
     );
 
     //building blocks - layout structure
-    this.facets.push(
+    this.bricks.push(
       {
         uid: "blocks_single-layout-structure",
         name: "Single",
@@ -181,7 +181,7 @@ export class facetService {
 
     //<editor-fold desc="search task">
 
-    this.facets.push(
+    this.bricks.push(
       {
         uid: "searchTask_inspire",
         name: "Inspire",
@@ -233,7 +233,7 @@ export class facetService {
     //<editor-fold desc="data">
 
     //data - attribute-type
-    this.facets.push(
+    this.bricks.push(
       {
         uid: "data_nominal-attribute-type",
         name: "Nominal",
@@ -255,7 +255,7 @@ export class facetService {
     );
 
     //data - data-structure
-    this.facets.push(
+    this.bricks.push(
       {
         uid: "data_hierarchy-data-structure",
         name: "Hierarchy",
@@ -335,7 +335,7 @@ export class facetService {
     //<editor-fold desc="interaction">
 
     //data - attribute-type
-    this.facets.push(
+    this.bricks.push(
       {
         uid: "interaction_adjust-interaction",
         name: "Adjust",
@@ -438,11 +438,11 @@ export class facetService {
   }
 
   getAllFacetOfGroup(group) {
-    return this.facets.filter((facet) => facet.category === group);
+    return this.bricks.filter((facet) => facet.category === group);
   }
 
   getByUid(uid) {
-    return this.facets.find((facet) => facet.uid === uid);
+    return this.bricks.find((facet) => facet.uid === uid);
   }
 
   getSpecificFacetsOfGroups(facets, groups) {

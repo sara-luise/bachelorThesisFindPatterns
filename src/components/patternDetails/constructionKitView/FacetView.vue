@@ -42,13 +42,14 @@
 <script>
 import FacetLayout from "./FacetLayout";
 import FacetLayoutSearchTask from "./FacetLayoutSearchTask";
+
 export default {
   name: "FacetView",
   components: { FacetLayoutSearchTask, FacetLayout },
   props: ["pattern"],
   methods: {
     getList(facets, groups) {
-      return this.$root.$data.facetService.getSpecificFacetsOfGroups(
+      return this.$root.$data.brickService.getSpecificFacetsOfGroups(
         facets,
         groups
       );
@@ -59,6 +60,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "src/mainStyles" as ms;
+
 .facets-layout {
   margin-top: 2rem;
   display: flex;

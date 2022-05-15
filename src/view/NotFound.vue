@@ -15,6 +15,7 @@ export default {
 .error-page {
   margin: 5rem;
   height: 50rem;
+
   h1 {
     color: #af0707;
     font-size: 20rem;
@@ -23,6 +24,7 @@ export default {
     margin: 0;
     padding-top: 8rem;
   }
+
   h2 {
     font-size: 10rem;
     padding-top: 5rem;

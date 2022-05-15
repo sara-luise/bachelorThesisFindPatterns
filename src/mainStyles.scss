@@ -1,9 +1,9 @@
 $element-base-color: rgb(55, 8, 122); //#37087A
 $grid-base-color: rgb(99, 63, 159); //#633F9F
 $layout-structure-base-color: rgb(142, 122, 199); //#8E7AC7
-$search-task-base-color: rgb(246, 198, 101);  //#F6C665
-$attribute-type-base-color: rgb(172, 210, 84);  //#ACD254
-$data-structure-base-color: rgb(128, 161, 35);  //#80A123
+$search-task-base-color: rgb(246, 198, 101); //#F6C665
+$attribute-type-base-color: rgb(172, 210, 84); //#ACD254
+$data-structure-base-color: rgb(128, 161, 35); //#80A123
 
 
 //for background
@@ -17,7 +17,6 @@ $background-attribute-type-base-color: rgba(154, 194, 53, 0.15);
 $select-color: rgba(148, 137, 208, 0.56);
 
 
-
 * {
   font-family: 'Roboto', sans-serif;
   font-size: medium;
@@ -25,18 +24,19 @@ $select-color: rgba(148, 137, 208, 0.56);
   scrollbar-color: $background-element-base-color #fafafa;
   scrollbar-width: thin;
   text-decoration: none !important;
+
   ::-moz-selection { /* Code for Firefox */
     color: black !important;
-    background: $select-color!important;
+    background: $select-color !important;
   }
 
   ::selection {
     color: black !important;
-    background:  $select-color !important;
+    background: $select-color !important;
   }
 }
 
-body{
+body {
   background: #fefefe;
 }
 

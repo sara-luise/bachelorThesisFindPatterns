@@ -1,9 +1,9 @@
-import { facetService } from "./FacetService";
+import { brickService } from "./BrickService";
 import _ from "lodash";
 
 export class patternService {
   patterns = [];
-  facetService = new facetService();
+  brickService = new brickService();
 
   constructor() {
     this.patterns.push(
@@ -1862,7 +1862,7 @@ export class patternService {
     let navigationFacets = [];
     let pattern = this.getByUid(uid);
     pattern.facets.forEach((facetUid) => {
-      let facet = this.facetService.getByUid(facetUid);
+      let facet = this.brickService.getByUid(facetUid);
       if (facet.category !== "interaction") {
         navigationFacets.push(facet);
       }

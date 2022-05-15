@@ -58,15 +58,15 @@ export default {
   &-element {
     border-left-color: ms.$element-base-color;
   }
+
   &-grid {
     border-left-color: ms.$grid-base-color;
   }
+
   &-layout-structure {
     border-left-color: ms.$layout-structure-base-color;
   }
-  &-attribute-type {
-    border-left-color: ms.$attribute-type-base-color;
-  }
+
   &-attribute-type {
     border-left-color: ms.$attribute-type-base-color;
   }
@@ -74,6 +74,11 @@ export default {
   &-attribute-type {
     border-left-color: ms.$attribute-type-base-color;
   }
+
+  &-attribute-type {
+    border-left-color: ms.$attribute-type-base-color;
+  }
+
   &-data-structure {
     border-left-color: ms.$data-structure-base-color;
   }

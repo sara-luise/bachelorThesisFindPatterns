@@ -14,13 +14,14 @@
 
 <script>
 import InteractionLayout from "./InteractionLayout";
+
 export default {
   name: "InteractionsView",
   components: { InteractionLayout },
   props: ["pattern"],
   methods: {
     getList(facets, groups) {
-      return this.$root.$data.facetService.getSpecificFacetsOfGroups(
+      return this.$root.$data.brickService.getSpecificFacetsOfGroups(
         facets,
         groups
       );
@@ -31,6 +32,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../../mainStyles" as ms;
+
 .interactions-view-layout {
   width: 100%;
   margin: 1rem 0;

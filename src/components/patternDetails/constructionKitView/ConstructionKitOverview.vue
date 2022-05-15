@@ -6,6 +6,7 @@
 
 <script>
 import FacetView from "./FacetView";
+
 export default {
   name: "ConstructionKitOverview",
   components: { FacetView },

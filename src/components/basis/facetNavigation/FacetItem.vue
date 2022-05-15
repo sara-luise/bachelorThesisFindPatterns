@@ -58,6 +58,7 @@ p {
   border: #ddd solid;
   border-width: 0 0 2px 2px;
   border-radius: 0.2rem;
+
   p {
     font-size: 17px;
     margin: 0;

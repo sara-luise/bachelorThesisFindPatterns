@@ -17,6 +17,7 @@ import BasisTop from "../components/basis/BasisTop";
 import PatternsContainer from "../components/basis/Patterns/PatternsContainer";
 import _ from "lodash";
 import FacetedNavigation from "../components/basis/facetNavigation/FacetedNavigation";
+
 export default {
   name: "BaseView",
   components: { FacetedNavigation, PatternsContainer, BasisTop },
@@ -31,22 +32,22 @@ export default {
           {
             header: "Elements",
             color: "color-element",
-            elements: this.$root.$data.facetService.convertListForNavigation(
-              this.$root.$data.facetService.getAllFacetOfGroup("element")
+            elements: this.$root.$data.brickService.convertListForNavigation(
+              this.$root.$data.brickService.getAllFacetOfGroup("element")
             ),
           },
           {
             header: "Grid",
             color: "color-grid",
-            elements: this.$root.$data.facetService.convertListForNavigation(
-              this.$root.$data.facetService.getAllFacetOfGroup("grid")
+            elements: this.$root.$data.brickService.convertListForNavigation(
+              this.$root.$data.brickService.getAllFacetOfGroup("grid")
             ),
           },
           {
             header: "Layout Structure",
             color: "color-layout-structure",
-            elements: this.$root.$data.facetService.convertListForNavigation(
-              this.$root.$data.facetService.getAllFacetOfGroup(
+            elements: this.$root.$data.brickService.convertListForNavigation(
+              this.$root.$data.brickService.getAllFacetOfGroup(
                 "layout-structure"
               )
             ),
@@ -57,8 +58,8 @@ export default {
         {
           name: "Search Task",
         },
-        this.$root.$data.facetService.convertListForNavigation(
-          this.$root.$data.facetService.getAllFacetOfGroup("searchTask")
+        this.$root.$data.brickService.convertListForNavigation(
+          this.$root.$data.brickService.getAllFacetOfGroup("searchTask")
         ),
       ],
       dataList: [
@@ -69,15 +70,15 @@ export default {
           {
             header: "Attribute Type",
             color: "color-attribute-type",
-            elements: this.$root.$data.facetService.convertListForNavigation(
-              this.$root.$data.facetService.getAllFacetOfGroup("attribute-type")
+            elements: this.$root.$data.brickService.convertListForNavigation(
+              this.$root.$data.brickService.getAllFacetOfGroup("attribute-type")
             ),
           },
           {
             header: "Data Structure",
             color: "color-data-structure",
-            elements: this.$root.$data.facetService.convertListForNavigation(
-              this.$root.$data.facetService.getAllFacetOfGroup("data-structure")
+            elements: this.$root.$data.brickService.convertListForNavigation(
+              this.$root.$data.brickService.getAllFacetOfGroup("data-structure")
             ),
           },
         ],

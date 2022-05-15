@@ -18,6 +18,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "src/mainStyles" as ms;
+
 .examples-layout {
   width: 100%;
   margin: 1rem 0;

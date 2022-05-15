@@ -92,6 +92,7 @@ export default {
   padding: 10px;
   z-index: 4;
   background: white;
+
   img {
     background: linear-gradient(
       to right,
@@ -121,6 +122,7 @@ export default {
   right: 10px;
   box-shadow: #bbbbbb 0 5px 15px;
   background: white;
+
   &:hover {
     box-shadow: #9f9f9f 0 10px 20px;
   }

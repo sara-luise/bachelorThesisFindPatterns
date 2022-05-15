@@ -15,6 +15,7 @@
 <script>
 import PatternImage from "./PatternImage";
 import ConstructionKitOverview from "../constructionKitView/ConstructionKitOverview";
+
 export default {
   name: "DetailHeader",
   components: { ConstructionKitOverview, PatternImage },
@@ -24,6 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "src/mainStyles" as ms;
+
 .layout {
   display: flex;
   justify-content: space-between;

@@ -2,7 +2,7 @@
   <div class="facet-preview-layout">
     <FacetLayout
       :item="facet"
-      v-for="facet in $root.$data.facetService.getSpecificFacetsOfGroups(
+      v-for="facet in $root.$data.brickService.getSpecificFacetsOfGroups(
         facetItems,
         ['element', 'grid', 'layout-structure']
       )"
@@ -12,7 +12,7 @@
     />
     <FacetLayoutSearchTask
       :item="facet"
-      v-for="facet in $root.$data.facetService.getSpecificFacetsOfGroups(
+      v-for="facet in $root.$data.brickService.getSpecificFacetsOfGroups(
         facetItems,
         ['searchTask']
       )"
@@ -21,7 +21,7 @@
     />
     <FacetLayout
       :item="facet"
-      v-for="facet in $root.$data.facetService.getSpecificFacetsOfGroups(
+      v-for="facet in $root.$data.brickService.getSpecificFacetsOfGroups(
         facetItems,
         ['attribute-type', 'data-structure']
       )"
@@ -34,6 +34,7 @@
 <script>
 import FacetLayout from "../constructionKitView/FacetLayout";
 import FacetLayoutSearchTask from "../constructionKitView/FacetLayoutSearchTask";
+
 export default {
   name: "FacetPreview",
   components: { FacetLayoutSearchTask, FacetLayout },
@@ -48,6 +49,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "src/mainStyles" as ms;
+
 .facet-preview-layout {
   display: flex;
   flex-direction: row;

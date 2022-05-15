@@ -10,6 +10,7 @@
 
 <script>
 import PatternPreview from "./PatternPreview";
+
 export default {
   name: "PatternsContainer",
   components: { PatternPreview },

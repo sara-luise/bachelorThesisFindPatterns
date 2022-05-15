@@ -47,6 +47,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "src/mainStyles" as ms;
+
 .content {
   display: flex;
   flex-direction: column;
