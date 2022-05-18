@@ -2,394 +2,394 @@
 "bricks":
 [
      {
-	"uid": "blocks_text-element",
-	"name": "Text", 
-	"imageName": "building blocks/text-element", 
-	"category": "element"
+       "uid": "how_text-element",
+       "name": "Text",
+       "imageName": "building blocks/text-element",
+       "category": "element"
       },
       {
-        "uid": "blocks_image-element",
+        "uid": "how_image-element",
         "name": "Image",
         "imageName": "building blocks/image-element",
         "category": "element"
       },
       {
-        "uid": "blocks_point-element",
+        "uid": "how_point-element",
         "name": "Point",
         "imageName": "building blocks/point-element",
         "category": "element"
       },
       {
-        "uid": "blocks_area-element",
+        "uid": "how_area-element",
         "name": "Area",
         "imageName": "building blocks/area-element",
         "category": "element"
       },
       {
-        "uid": "blocks_icon-element",
+        "uid": "how_icon-element",
         "name": "Icon",
         "imageName": "building blocks/icon-element",
         "category": "element"
       },
       {
-        "uid": "blocks_glyph-element",
+        "uid": "how_glyph-element",
         "name": "Glyph",
         "imageName": "building blocks/glyph-element",
         "category": "element"
       },
       {
-        "uid": "blocks_line-element",
+        "uid": "how_line-element",
         "name": "Line",
         "imageName": "building blocks/line-element",
         "category": "element"
       },
       {
-        "uid": "blocks_flow-element",
+        "uid": "how_flow-element",
         "name": "Flow",
         "imageName": "building blocks/flow-element",
         "category": "element"
       },
       {
-        "uid": "blocks_rectangular-grid",
+        "uid": "how_rectangular-grid",
         "name": "Rectangular",
         "imageName": "building blocks/rectangular-grid",
         "category": "grid"
       },
       {
-        "uid": "blocks_radial-grid",
+        "uid": "how_radial-grid",
         "name": "Radial",
         "imageName": "building blocks/radial-grid",
         "category": "grid"
       },
       {
-        "uid": "blocks_triangular-grid",
+        "uid": "how_triangular-grid",
         "name": "Triangular",
         "imageName": "building blocks/triangular-grid",
         "category": "grid"
       },
       {
-        "uid": "blocks_free-form-grid",
+        "uid": "how_free-form-grid",
         "name": "Free Form",
         "imageName": "building blocks/free-form-grid",
         "category": "grid"
       },
 {
-        "uid": "blocks_single-layout-structure",
+        "uid": "how_single-layout-structure",
         "name": "Single",
         "imageName": "building blocks/single-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_list-layout-structure",
+        "uid": "how_list-layout-structure",
         "name": "List",
         "imageName": "building blocks/list-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_tiles-layout-structure",
+        "uid": "how_tiles-layout-structure",
         "name": "Tiles",
         "imageName": "building blocks/tiles-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_bars-layout-structure",
+        "uid": "how_bars-layout-structure",
         "name": "Bars",
         "imageName": "building blocks/bars-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_matrix-layout-structure",
+        "uid": "how_matrix-layout-structure",
         "name": "Matrix",
         "imageName": "building blocks/matrix-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_mosaic-layout-structure",
+        "uid": "how_mosaic-layout-structure",
         "name": "Mosaic",
         "imageName": "building blocks/mosaic-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_2d-plot-layout-structure",
+        "uid": "how_2d-plot-layout-structure",
         "name": "2D-Plot",
         "imageName": "building blocks/2d-plot-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_cluster-layout-structure",
+        "uid": "how_cluster-layout-structure",
         "name": "Cluster",
         "imageName": "building blocks/cluster-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_parallel-plot-layout-structure",
+        "uid": "how_parallel-plot-layout-structure",
         "name": "Parallel Plot",
         "imageName": "building blocks/parallel-plot-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_table-layout-structure",
+        "uid": "how_table-layout-structure",
         "name": "Table",
         "imageName": "building blocks/table-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_map-layout-structure",
+        "uid": "how_map-layout-structure",
         "name": "Map",
         "imageName": "building blocks/map-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_node-link-layout-structure",
+        "uid": "how_node-link-layout-structure",
         "name": "Node-Link",
         "imageName": "building blocks/node-link-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_nested-layout-structure",
+        "uid": "how_nested-layout-structure",
         "name": "Nested",
         "imageName": "building blocks/nested-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_indented-layout-structure",
+        "uid": "how_indented-layout-structure",
         "name": "Indented",
         "imageName": "building blocks/indented-layout-structure",
         "category": "layout-structure"
       },
       {
-        "uid": "blocks_partitioned-layout-structure",
+        "uid": "how_partitioned-layout-structure",
         "name": "Partitioned",
         "imageName": "building blocks/partitioned-layout-structure",
         "category": "layout-structure"
       },
 	{
-        "uid": "searchTask_inspire",
+        "uid": "why_inspire",
         "name": "Inspire",
         "category": "searchTask"
       },
       {
-        "uid": "searchTask_formulate",
+        "uid": "why_formulate",
         "name": "Formulate",
         "category": "searchTask"
       },
       {
-        "uid": "searchTask_reformulate",
+        "uid": "why_reformulate",
         "name": "Reformulate",
         "category": "searchTask"
       },
       {
-        "uid": "searchTask_trace",
+        "uid": "why_trace",
         "name": "Trace",
         "category": "searchTask"
       },
       {
-        "uid": "searchTask_collect",
+        "uid": "why_collect",
         "name": "Collect",
         "category": "searchTask"
       },
       {
-        "uid": "searchTask_examine",
+        "uid": "why_examine",
         "name": "Examine",
         "category": "searchTask"
       },
       {
-        "uid": "searchTask_analyze",
+        "uid": "why_analyze",
         "name": "Analyze",
         "category": "searchTask"
       },
       {
-        "uid": "searchTask_compare",
+        "uid": "why_compare",
         "name": "Compare",
         "category": "searchTask"
       },
       {
-        "uid": "searchTask_verify",
+        "uid": "why_verify",
         "name": "Verify",
         "category": "searchTask"
       },
 {
-        "uid": "data_nominal-attribute-type",
+        "uid": "what_nominal-attribute-type",
         "name": "Nominal",
         "imageName": "data/nominal-attribute-type",
         "category": "attribute-type"
       },
       {
-        "uid": "data_ordinal-attribute-type",
+        "uid": "what_ordinal-attribute-type",
         "name": "Ordinal",
         "imageName": "data/ordinal-attribute-type",
         "category": "attribute-type"
       },
       {
-        "uid": "data_quantitative-attribute-type",
+        "uid": "what_quantitative-attribute-type",
         "name": "Quantitative",
         "imageName": "data/quanti-attribute-type",
         "category": "attribute-type"
       },
 {
-        "uid": "data_hierarchy-data-structure",
+        "uid": "what_hierarchy-data-structure",
         "name": "Hierarchy",
         "imageName": "data/hierarchy-data-structure",
         "category": "data-structure"
       },
       {
-        "uid": "data_faceted-classification-data-structure",
+        "uid": "what_faceted-classification-data-structure",
         "name": "Faceted Classification",
         "imageName": "data/faceted-classification-data-structure",
         "category": "data-structure"
       },
       {
-        "uid": "data_ontology-data-structure",
+        "uid": "what_ontology-data-structure",
         "name": "Ontology",
         "imageName": "data/ontology-data-structure",
         "category": "data-structure"
       },
       {
-        "uid": "data_folksonomy-data-structure",
+        "uid": "what_folksonomy-data-structure",
         "name": "Folksonomy",
         "imageName": "data/folksonomy-data-structure",
         "category": "data-structure"
       },
       {
-        "uid": "data_1d-data-structure",
+        "uid": "what_1d-data-structure",
         "name": "1-Dimensional",
         "imageName": "data/1d-data-structure",
         "category": "data-structure"
       },
       {
-        "uid": "data_set-data-structure",
+        "uid": "what_set-data-structure",
         "name": "Set",
         "imageName": "data/set-data-structure",
         "category": "data-structure"
       },
       {
-        "uid": "data_temporal-data-structure",
+        "uid": "what_temporal-data-structure",
         "name": "Temporal",
         "imageName": "data/temporal-data-structure",
         "category": "data-structure"
       },
       {
-        "uid": "data_2d-data-structure",
+        "uid": "what_2d-data-structure",
         "name": "2-Dimensional",
         "imageName": "data/2d-data-structure",
         "category": "data-structure"
       },
       {
-        "uid": "data_spatial-data-structure",
+        "uid": "what_spatial-data-structure",
         "name": "Spatial",
         "imageName": "data/spatial-data-structure",
         "category": "data-structure"
       },
       {
-        "uid": "data_3d-data-structure",
+        "uid": "what_3d-data-structure",
         "name": "3-Dimensional",
         "imageName": "data/3d-data-structure",
         "category": "data-structure"
       },
       {
-        "uid": "data_multidimensional-data-structure",
+        "uid": "what_multidimensional-data-structure",
         "name": "Multidimensional",
         "imageName": "data/multidimensional-data-structure",
         "category": "data-structure"
       },
       {
-        "uid": "data_table-data-structure",
+        "uid": "what_table-data-structure",
         "name": "Table",
         "imageName": "data/table-data-structure",
         "category": "data-structure"
       },
 {
-        "uid": "interaction_adjust-interaction",
+        "uid": "how_adjust-interaction",
         "name": "Adjust",
         "imageName": "interactions/adjust-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_aggregate-interaction",
+        "uid": "how_aggregate-interaction",
         "name": "Aggregate",
         "imageName": "interactions/aggregate-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_append-interaction",
+        "uid": "how_append-interaction",
         "name": "Append",
         "imageName": "interactions/append-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_distort-interaction",
+        "uid": "how_distort-interaction",
         "name": "Distort",
         "imageName": "interactions/distort-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_exclude-interaction",
+        "uid": "how_exclude-interaction",
         "name": "Exclude",
         "imageName": "interactions/exclude-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_filter-interaction",
+        "uid": "how_filter-interaction",
         "name": "Filter",
         "imageName": "interactions/filter-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_group-interaction",
+        "uid": "how_group-interaction",
         "name": "Group",
         "imageName": "interactions/group-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_highlight-interaction",
+        "uid": "how_highlight-interaction",
         "name": "Highlight",
         "imageName": "interactions/highlight-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_inspect-interaction",
+        "uid": "how_inspect-interaction",
         "name": "Inspect",
         "imageName": "interactions/inspect-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_navigate-interaction",
+        "uid": "how_navigate-interaction",
         "name": "Navigate",
         "imageName": "interactions/navigate-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_pan-interaction",
+        "uid": "how_pan-interaction",
         "name": "Pan",
         "imageName": "interactions/pan-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_remove-interaction",
+        "uid": "how_remove-interaction",
         "name": "Remove",
         "imageName": "interactions/remove-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_rotate-interaction",
+        "uid": "how_rotate-interaction",
         "name": "Rotate",
         "imageName": "interactions/rotate-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_select-interaction",
+        "uid": "how_select-interaction",
         "name": "Select",
         "imageName": "interactions/select-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_sort-interaction",
+        "uid": "how_sort-interaction",
         "name": "Sort",
         "imageName": "interactions/sort-interaction",
         "category": "interaction"
       },
       {
-        "uid": "interaction_zoom-interaction",
+        "uid": "how_zoom-interaction",
         "name": "Zoom",
         "imageName": "interactions/zoom-interaction",
         "category": "interaction"
