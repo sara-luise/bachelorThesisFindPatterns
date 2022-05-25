@@ -5,394 +5,394 @@
        "uid": "how_text-element",
        "name": "Text",
        "imageName": "building blocks/text-element",
-       "category": "element"
+       "facet": "element"
       },
       {
         "uid": "how_image-element",
         "name": "Image",
         "imageName": "building blocks/image-element",
-        "category": "element"
+        "facet": "element"
       },
       {
         "uid": "how_point-element",
         "name": "Point",
         "imageName": "building blocks/point-element",
-        "category": "element"
+        "facet": "element"
       },
       {
         "uid": "how_area-element",
         "name": "Area",
         "imageName": "building blocks/area-element",
-        "category": "element"
+        "facet": "element"
       },
       {
         "uid": "how_icon-element",
         "name": "Icon",
         "imageName": "building blocks/icon-element",
-        "category": "element"
+        "facet": "element"
       },
       {
         "uid": "how_glyph-element",
         "name": "Glyph",
         "imageName": "building blocks/glyph-element",
-        "category": "element"
+        "facet": "element"
       },
       {
         "uid": "how_line-element",
         "name": "Line",
         "imageName": "building blocks/line-element",
-        "category": "element"
+        "facet": "element"
       },
       {
         "uid": "how_flow-element",
         "name": "Flow",
         "imageName": "building blocks/flow-element",
-        "category": "element"
+        "facet": "element"
       },
       {
         "uid": "how_rectangular-grid",
         "name": "Rectangular",
         "imageName": "building blocks/rectangular-grid",
-        "category": "grid"
+        "facet": "grid"
       },
       {
         "uid": "how_radial-grid",
         "name": "Radial",
         "imageName": "building blocks/radial-grid",
-        "category": "grid"
+        "facet": "grid"
       },
       {
         "uid": "how_triangular-grid",
         "name": "Triangular",
         "imageName": "building blocks/triangular-grid",
-        "category": "grid"
+        "facet": "grid"
       },
       {
         "uid": "how_free-form-grid",
         "name": "Free Form",
         "imageName": "building blocks/free-form-grid",
-        "category": "grid"
+        "facet": "grid"
       },
 {
         "uid": "how_single-layout-structure",
         "name": "Single",
         "imageName": "building blocks/single-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_list-layout-structure",
         "name": "List",
         "imageName": "building blocks/list-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_tiles-layout-structure",
         "name": "Tiles",
         "imageName": "building blocks/tiles-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_bars-layout-structure",
         "name": "Bars",
         "imageName": "building blocks/bars-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_matrix-layout-structure",
         "name": "Matrix",
         "imageName": "building blocks/matrix-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_mosaic-layout-structure",
         "name": "Mosaic",
         "imageName": "building blocks/mosaic-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_2d-plot-layout-structure",
         "name": "2D-Plot",
         "imageName": "building blocks/2d-plot-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_cluster-layout-structure",
         "name": "Cluster",
         "imageName": "building blocks/cluster-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_parallel-plot-layout-structure",
         "name": "Parallel Plot",
         "imageName": "building blocks/parallel-plot-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_table-layout-structure",
         "name": "Table",
         "imageName": "building blocks/table-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_map-layout-structure",
         "name": "Map",
         "imageName": "building blocks/map-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_node-link-layout-structure",
         "name": "Node-Link",
         "imageName": "building blocks/node-link-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_nested-layout-structure",
         "name": "Nested",
         "imageName": "building blocks/nested-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_indented-layout-structure",
         "name": "Indented",
         "imageName": "building blocks/indented-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
       {
         "uid": "how_partitioned-layout-structure",
         "name": "Partitioned",
         "imageName": "building blocks/partitioned-layout-structure",
-        "category": "layout-structure"
+        "facet": "layout-structure"
       },
 	{
         "uid": "why_inspire",
         "name": "Inspire",
-        "category": "searchTask"
+        "facet": "searchTask"
       },
       {
         "uid": "why_formulate",
         "name": "Formulate",
-        "category": "searchTask"
+        "facet": "searchTask"
       },
       {
         "uid": "why_reformulate",
         "name": "Reformulate",
-        "category": "searchTask"
+        "facet": "searchTask"
       },
       {
         "uid": "why_trace",
         "name": "Trace",
-        "category": "searchTask"
+        "facet": "searchTask"
       },
       {
         "uid": "why_collect",
         "name": "Collect",
-        "category": "searchTask"
+        "facet": "searchTask"
       },
       {
         "uid": "why_examine",
         "name": "Examine",
-        "category": "searchTask"
+        "facet": "searchTask"
       },
       {
         "uid": "why_analyze",
         "name": "Analyze",
-        "category": "searchTask"
+        "facet": "searchTask"
       },
       {
         "uid": "why_compare",
         "name": "Compare",
-        "category": "searchTask"
+        "facet": "searchTask"
       },
       {
         "uid": "why_verify",
         "name": "Verify",
-        "category": "searchTask"
+        "facet": "searchTask"
       },
 {
         "uid": "what_nominal-attribute-type",
         "name": "Nominal",
         "imageName": "data/nominal-attribute-type",
-        "category": "attribute-type"
+        "facet": "attribute-type"
       },
       {
         "uid": "what_ordinal-attribute-type",
         "name": "Ordinal",
         "imageName": "data/ordinal-attribute-type",
-        "category": "attribute-type"
+        "facet": "attribute-type"
       },
       {
         "uid": "what_quantitative-attribute-type",
         "name": "Quantitative",
         "imageName": "data/quanti-attribute-type",
-        "category": "attribute-type"
+        "facet": "attribute-type"
       },
 {
         "uid": "what_hierarchy-data-structure",
         "name": "Hierarchy",
         "imageName": "data/hierarchy-data-structure",
-        "category": "data-structure"
+        "facet": "data-structure"
       },
       {
         "uid": "what_faceted-classification-data-structure",
         "name": "Faceted Classification",
         "imageName": "data/faceted-classification-data-structure",
-        "category": "data-structure"
+        "facet": "data-structure"
       },
       {
         "uid": "what_ontology-data-structure",
         "name": "Ontology",
         "imageName": "data/ontology-data-structure",
-        "category": "data-structure"
+        "facet": "data-structure"
       },
       {
         "uid": "what_folksonomy-data-structure",
         "name": "Folksonomy",
         "imageName": "data/folksonomy-data-structure",
-        "category": "data-structure"
+        "facet": "data-structure"
       },
       {
         "uid": "what_1d-data-structure",
         "name": "1-Dimensional",
         "imageName": "data/1d-data-structure",
-        "category": "data-structure"
+        "facet": "data-structure"
       },
       {
         "uid": "what_set-data-structure",
         "name": "Set",
         "imageName": "data/set-data-structure",
-        "category": "data-structure"
+        "facet": "data-structure"
       },
       {
         "uid": "what_temporal-data-structure",
         "name": "Temporal",
         "imageName": "data/temporal-data-structure",
-        "category": "data-structure"
+        "facet": "data-structure"
       },
       {
         "uid": "what_2d-data-structure",
         "name": "2-Dimensional",
         "imageName": "data/2d-data-structure",
-        "category": "data-structure"
+        "facet": "data-structure"
       },
       {
         "uid": "what_spatial-data-structure",
         "name": "Spatial",
         "imageName": "data/spatial-data-structure",
-        "category": "data-structure"
+        "facet": "data-structure"
       },
       {
         "uid": "what_3d-data-structure",
         "name": "3-Dimensional",
         "imageName": "data/3d-data-structure",
-        "category": "data-structure"
+        "facet": "data-structure"
       },
       {
         "uid": "what_multidimensional-data-structure",
         "name": "Multidimensional",
         "imageName": "data/multidimensional-data-structure",
-        "category": "data-structure"
+        "facet": "data-structure"
       },
       {
         "uid": "what_table-data-structure",
         "name": "Table",
         "imageName": "data/table-data-structure",
-        "category": "data-structure"
+        "facet": "data-structure"
       },
 {
         "uid": "how_adjust-interaction",
         "name": "Adjust",
         "imageName": "interactions/adjust-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_aggregate-interaction",
         "name": "Aggregate",
         "imageName": "interactions/aggregate-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_append-interaction",
         "name": "Append",
         "imageName": "interactions/append-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_distort-interaction",
         "name": "Distort",
         "imageName": "interactions/distort-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_exclude-interaction",
         "name": "Exclude",
         "imageName": "interactions/exclude-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_filter-interaction",
         "name": "Filter",
         "imageName": "interactions/filter-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_group-interaction",
         "name": "Group",
         "imageName": "interactions/group-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_highlight-interaction",
         "name": "Highlight",
         "imageName": "interactions/highlight-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_inspect-interaction",
         "name": "Inspect",
         "imageName": "interactions/inspect-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_navigate-interaction",
         "name": "Navigate",
         "imageName": "interactions/navigate-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_pan-interaction",
         "name": "Pan",
         "imageName": "interactions/pan-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_remove-interaction",
         "name": "Remove",
         "imageName": "interactions/remove-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_rotate-interaction",
         "name": "Rotate",
         "imageName": "interactions/rotate-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_select-interaction",
         "name": "Select",
         "imageName": "interactions/select-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_sort-interaction",
         "name": "Sort",
         "imageName": "interactions/sort-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       },
       {
         "uid": "how_zoom-interaction",
         "name": "Zoom",
         "imageName": "interactions/zoom-interaction",
-        "category": "interaction"
+        "facet": "interaction"
       }
 	]
 }

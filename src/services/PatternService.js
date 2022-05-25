@@ -19,7 +19,7 @@ export class patternService {
     let pattern = this.getByUid(uid);
     pattern.facets.forEach((facetUid) => {
       let facet = this.brickService.getByUid(facetUid);
-      if (facet.category !== "interaction") {
+      if (facet.facet !== "interaction") {
         navigationFacets.push(facet);
       }
     });
@@ -44,9 +44,7 @@ export class patternService {
     if (facets.length === 0) {
       return this.patterns;
     }
-    let facetGroups = Object.entries(
-      _.groupBy(facets, ({ category }) => category)
-    );
+    let facetGroups = Object.entries(_.groupBy(facets, ({ facet }) => facet));
 
     this.patterns.forEach((pattern) => {
       let containsCount = 0;

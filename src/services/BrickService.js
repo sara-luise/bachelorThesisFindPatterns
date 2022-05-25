@@ -8,7 +8,7 @@ export class brickService {
   }
 
   getAllFacetOfGroup(group) {
-    return this.bricks.filter((facet) => facet.category === group);
+    return this.bricks.filter((facet) => facet.facet === group);
   }
 
   getByUid(uid) {
@@ -22,7 +22,7 @@ export class brickService {
       let facet = this.getByUid(facetUid);
 
       groups.forEach((group) => {
-        if (facet.category === group) {
+        if (facet.facet === group) {
           facetGroups.push(facet);
         }
       });
@@ -37,7 +37,7 @@ export class brickService {
         uid: facet.uid,
         name: facet.name,
         imageName: facet?.imageName,
-        category: facet.category,
+        facet: facet.facet,
         possibleNumberPatterns: 0,
         chosen: false,
       });

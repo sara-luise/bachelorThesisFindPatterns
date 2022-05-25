@@ -12,11 +12,11 @@
       <div class="navigation-facets">
         <div v-for="facet in getNavigationFacets(pattern.uid)" :key="facet.uid">
           <FacetNavigationPatternPreview
-            v-if="facet.category !== 'searchTask'"
+            v-if="facet.facet !== 'searchTask'"
             :item="facet"
           />
           <FacetNavigationSearchTaskPatternPreview
-            v-if="facet.category === 'searchTask'"
+            v-if="facet.facet === 'searchTask'"
             :item="facet"
           />
         </div>
